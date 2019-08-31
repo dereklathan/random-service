@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 @RequestMapping("/random")
 public class RandomRestController {
-    private SecureRandom secureRandom;
+    private final SecureRandom secureRandom;
     
     public RandomRestController() {
         secureRandom = new SecureRandom();
